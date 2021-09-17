@@ -92,6 +92,17 @@ class ViewController: UIViewController {
         print(f) // [0.6,4.0,30.0]と表示
         
         
+        // 配列要素へのアクセス
+        let digits = ["00","01","02","03"]
+        print(digits[2]) // 02を出力
+        print(digits.count) //要素の個数を表す４を出力
+        
+        var nums = digits //numsには複製が作られる
+        nums[2] = "Two" //変数には代入可能
+        digits[2] = "Two" // エラー　定数には代入できない
+        print(digits[2]) //０２を出力
+        print(nums) //["00","01","Two","03"]
+        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
