@@ -121,11 +121,14 @@ class ViewController: UIViewController {
 //        // 以下構文はエラー
 //        n /(i +1) //修正するには、演算子 / と +　の前後に空白をいれるか、取り除くか
 //
-        //識別子
-        //UpperCamelCase
-        Int Void AnyObhect CustomStringConvertible
-        //lowerCamelCase
-        message totalCount nextPartialResult
+//        //識別子
+//        //UpperCamelCase
+//        Int Void AnyObhect CustomStringConvertible
+//        //lowerCamelCase
+//        message totalCount nextPartialResult
+        //型パラメータ
+        var a: [Int] //通常こちらの記法（わかりやすさ重視）
+        var a:  Array<Int>　//このようにも書ける（本来の記法）
         
         super.viewDidLoad()
         
