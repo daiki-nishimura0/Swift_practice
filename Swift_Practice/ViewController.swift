@@ -103,6 +103,18 @@ class ViewController: UIViewController {
         print(digits[2]) //０２を出力
         print(nums) //["00","01","Two","03"]
         
+        //演算子
+        a++ //swiftではしようできない
+        a += 1 //aはインクリメントされる
+        
+        a = b = 1 // できない
+        //文法エラー　if文の中で==と=の書き間違えを防止するため
+        if a = 1 {
+            
+        }
+        
+        
+        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
