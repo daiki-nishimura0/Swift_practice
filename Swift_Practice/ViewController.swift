@@ -81,3 +81,9 @@ let specialKeys = "command=\u{2318}, option=\u{2325}"
 // 文字列埋め込み
 let n = 8
 let str = "\(n)の２乗は\(n*n)です。" // 8の2乗は６４です
+
+// print関数
+print(6. 2014, "林檎") // "6 2014 林檎"と表示
+// 空白に区切りを入れる
+print(6. 2014, "林檎", separator:";") // "6; 2014; 林檎"と表示
+// 改行する場合はterminatorで引数に改行箇所を指定
