@@ -5,7 +5,12 @@
 //  Created by daiki nishimura on 2021/09/17.
 //
 
-import UIKit
+// モジュールのインポート
+import Cocoa //フレームワークのインポート
+import UIKit //フレームワークのインポート
+import Foundation //対話的に使うならFoundationで十分
+import Darwin //Foundationのうち、OS関係のもの
+
 
 class ViewController: UIViewController {
 
@@ -126,9 +131,13 @@ class ViewController: UIViewController {
 //        Int Void AnyObhect CustomStringConvertible
 //        //lowerCamelCase
 //        message totalCount nextPartialResult
-        //型パラメータ
-        var a: [Int] //通常こちらの記法（わかりやすさ重視）
-        var a:  Array<Int>　//このようにも書ける（本来の記法）
+//        //型パラメータ
+//        var a: [Int] //通常こちらの記法（わかりやすさ重視）
+//        var a:  Array<Int>　//このようにも書ける（本来の記法）
+//
+        
+
+        
         
         super.viewDidLoad()
         
