@@ -121,7 +121,13 @@ class ViewController: UIViewController {
 //        // 以下構文はエラー
 //        n /(i +1) //修正するには、演算子 / と +　の前後に空白をいれるか、取り除くか
 //
-
+        //識別子
+        //UpperCamelCase
+        Int Void AnyObhect CustomStringConvertible
+        //lowerCamelCase
+        message totalCount nextPartialResult
+        
+        super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
