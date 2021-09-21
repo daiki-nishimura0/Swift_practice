@@ -12,16 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // 引数ラベルの指定と省略
-        func area(h:Double, w:Double) -> Double {
-            return h * w
-        }
-        // 以下で呼び出せる
-        let a = area(h: 10.0, w: 12.5)
-        // 引数ラベルを書き足す
-        func area(height h:Double, width w:Double) -> Double {
-            return h * w
-        }
+//        // 引数ラベルの指定と省略
+//        func area(h:Double, w:Double) -> Double {
+//            return h * w
+//        }
+//        // 以下で呼び出せる
+//        let a = area(h: 10.0, w: 12.5)
+//        // 引数ラベルを書き足す
+//        func area(height h:Double, width w:Double) -> Double {
+//            return h * w
+//        }
         // 以下で呼び出し
 //        let a = area(height: 10.0, width: 12.5)
         
