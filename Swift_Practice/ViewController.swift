@@ -12,28 +12,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // 関数内の関数
-        func printMonth(first fday:Int, days:Int) {
-            var d = 1 - fday            // 月のはじまりの空白は負と０で表す
-            func daystr() -> String {   // 関数内のローカルな関数
-                if d <= 0 {             // 変数dは上で定義したもの。引数で渡してもいい
-                    return "    "       // 月初の空白
-            } else {
-                return (d < 10 ? "   \(d)" : "  \(d)" )
-            }
-        }
-        
-            while d <= days {
-                var line = ""           // １週間分の日付を並べる
-                for _ in 0..<7 {
-                    line += daystr()    // ネスト関数を使用
-                    d += 1
-                    if d > days { break } // 月末になったら抜ける
-                }
-                print(line)
-            }
-        }
-        print(printMonth(first: 1, days: 29))
+//        // 関数内の関数
+//        func printMonth(first fday:Int, days:Int) {
+//            var d = 1 - fday            // 月のはじまりの空白は負と０で表す
+//            func daystr() -> String {   // 関数内のローカルな関数
+//                if d <= 0 {             // 変数dは上で定義したもの。引数で渡してもいい
+//                    return "    "       // 月初の空白
+//            } else {
+//                return (d < 10 ? "   \(d)" : "  \(d)" )
+//            }
+//        }
+//
+//            while d <= days {
+//                var line = ""           // １週間分の日付を並べる
+//                for _ in 0..<7 {
+//                    line += daystr()    // ネスト関数を使用
+//                    d += 1
+//                    if d > days { break } // 月末になったら抜ける
+//                }
+//                print(line)
+//            }
+//        }
+//        print(printMonth(first: 1, days: 29))
             
 //        // 引数の値は関数内で変更できない
 //        // 関数内で仮引数が受け取った値を変更　（入力した日付に曜日を整数値で返す関数　日曜　0, 月曜 1）
