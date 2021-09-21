@@ -200,30 +200,30 @@ class ViewController: UIViewController {
 //        default:
 //            print("不可")
 //        }
-        // ラベル付きのループ文
-        let days = 31
-        let firstDay = 2
-        var w = 0
-        while w < firstDay {
-            print("   ", terminator: "")
-            w += 1
-        }
-        var d = 1
-        loop: while true {
-            while w < 7 {
-                let pad = d < 10 ? " " : ""
-                print(pad + " \(d)", terminator: "")
-                w += 1
-                d += 1
-                
-                if d > days {
-                    print()
-                    break loop
-                }
-            }
-            print()
-            w = 0
-        }
+//        // ラベル付きのループ文
+//        let days = 31
+//        let firstDay = 2
+//        var w = 0
+//        while w < firstDay {
+//            print("   ", terminator: "")
+//            w += 1
+//        }
+//        var d = 1
+//        loop: while true {
+//            while w < 7 {
+//                let pad = d < 10 ? " " : ""
+//                print(pad + " \(d)", terminator: "")
+//                w += 1
+//                d += 1
+//                
+//                if d > days {
+//                    print()
+//                    break loop
+//                }
+//            }
+//            print()
+//            w = 0
+//        }
         
         
         // Do any additional setup after loading the view.
