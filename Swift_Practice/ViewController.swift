@@ -11,17 +11,17 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        
-        // inout引数　変数の値を入れ替えたい場合
-        func mySwap(_ a: inout Int, _ b: inout Int){
-            let t = a; a = b; b = t
-        }
-        
-        var x = 100
-        var y = 0
-        mySwap(&x, &y) // 実行後　xとyの値が入れ替わる
-        print(x)
-        print(y)
+//        
+//        // inout引数　変数の値を入れ替えたい場合
+//        func mySwap(_ a: inout Int, _ b: inout Int){
+//            let t = a; a = b; b = t
+//        }
+//        
+//        var x = 100
+//        var y = 0
+//        mySwap(&x, &y) // 実行後　xとyの値が入れ替わる
+//        print(x)
+//        print(y)
         
 //        // 下線の特殊な用法 ワイルドカード
 //        _ = myGreatProcess(10, 20)
