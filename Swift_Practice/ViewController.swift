@@ -11,12 +11,12 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        // 引数ラベル
-        func buy(product:Int, price:Int, quantity:Int) {
-            print("Product:\(product), amount = \(price * quantity)")
-        }
-        // 呼び出し側での記述　実引数とともに記述される識別子を引数ラベルと呼ぶ
-        buy(product: 19090, price: 180000, quantity: 1)
+//        // 引数ラベル
+//        func buy(product:Int, price:Int, quantity:Int) {
+//            print("Product:\(product), amount = \(price * quantity)")
+//        }
+//        // 呼び出し側での記述　実引数とともに記述される識別子を引数ラベルと呼ぶ
+//        buy(product: 19090, price: 180000, quantity: 1)
         
         
 //        // returnの省略
