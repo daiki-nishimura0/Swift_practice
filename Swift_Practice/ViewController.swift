@@ -5,11 +5,8 @@
 //  Created by daiki nishimura on 2021/09/17.
 //
 
-// モジュールのインポート
-import Cocoa //フレームワークのインポート
 import UIKit //フレームワークのインポート
-import Foundation //対話的に使うならFoundationで十分
-import Darwin //Foundationのうち、OS関係のもの
+
 
 
 class ViewController: UIViewController {
@@ -135,7 +132,13 @@ class ViewController: UIViewController {
 //        var a: [Int] //通常こちらの記法（わかりやすさ重視）
 //        var a:  Array<Int>　//このようにも書ける（本来の記法）
 //
-        
+//        // if文
+//        let b: Int
+//        if a >= 0 {
+//            b = a
+//        } else {
+//            b = -a
+//        }
 
         
         
