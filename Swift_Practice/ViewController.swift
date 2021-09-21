@@ -11,23 +11,23 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        // 関数定義の概要
-        var total = 0
-        
-        func count(n: Int) -> Int { // 整数の引数を１つとり、整数を返す
-            total += n
-            return total
-        }
-        
-        func reset() { total = 0} // 引数も返り値もなし
-        
-        reset()
-        let a = 10
-        let b = count(n: a - 5) // 実引数の値は５
-        print("\(count(n: a))") // 関数の返り値として１５を表示
-        reset()                 // ０に戻す
-        print("\(count(n: -2))")// -2を表示
-        
+//        // 関数定義の概要
+//        var total = 0
+//        
+//        func count(n: Int) -> Int { // 整数の引数を１つとり、整数を返す
+//            total += n
+//            return total
+//        }
+//        
+//        func reset() { total = 0} // 引数も返り値もなし
+//        
+//        reset()
+//        let a = 10
+//        let b = count(n: a - 5) // 実引数の値は５
+//        print("\(count(n: a))") // 関数の返り値として１５を表示
+//        reset()                 // ０に戻す
+//        print("\(count(n: -2))")// -2を表示
+//        
 //        let fortune = ["大吉\u{2661}", "中吉\u{266a}", "小吉", "末吉", "凶\u{1f61e}", "大凶\u{1f480}"]
 //        let idx = Int(time(nil)) % fortune.count
 //        print(fortune[idx])
