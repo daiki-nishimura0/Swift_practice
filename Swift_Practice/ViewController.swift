@@ -12,14 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // returnの省略
-        // 以下の関数は同じ定義
-        var total = 199
-        func messageA() -> String {
-            return "現在の値は\(total)です"
-        }
-        func messageB() -> String { "現在の値は\(total)です" }
-        
+//        // returnの省略
+//        // 以下の関数は同じ定義
+//        var total = 199
+//        func messageA() -> String {
+//            return "現在の値は\(total)です"
+//        }
+//        func messageB() -> String { "現在の値は\(total)です" }
+//        
 //        // 関数定義の概要
 //        var total = 0
 //
