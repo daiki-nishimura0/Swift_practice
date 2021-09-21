@@ -165,6 +165,16 @@ class ViewController: UIViewController {
 //        } while n > 1
 //        print(n)
         
+        // for-in文
+        for i in 1 ..< 10 {
+            var line = ""
+            for j in 1 ..< 10 {
+                let n = i * j
+                if n < 10 { line += " "}
+                line += "\(n)"
+                }
+            print(line)
+        }
         
         
         super.viewDidLoad()
