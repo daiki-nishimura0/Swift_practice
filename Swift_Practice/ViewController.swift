@@ -175,31 +175,31 @@ class ViewController: UIViewController {
 //                }
 //            print(line)
 //        }
-        // switch分
-        switch n {
-        case 0:
-            print("none")// breakは不要
-        case 1:          // エラー。何か文がなければならない
-        case 2, 3:       // 複数を列挙する場合はこのように記述
-            print("a few")
-        case 4, 5:       // 上の節から下に実行が及ぶことはない
-            print("some")
-        case 6: break    // breakを記述してもOK
-        default:         // defaultは最後に記述
-            print("several")
-        }
-        
-        let 追試下限 = 45
-        var score = 65 // たとえば得点が65点なら
-        switch score {
-        case 追試下限..<75: print("追試") //
-        case 90...100: print("秀")
-        case 80..<90: print("優")
-        case 70..<80: print("良")
-        case 60..<70: print("可")
-        default:
-            print("不可")
-        }
+//        // switch分
+//        switch n {
+//        case 0:
+//            print("none")// breakは不要
+//        case 1:          // エラー。何か文がなければならない
+//        case 2, 3:       // 複数を列挙する場合はこのように記述
+//            print("a few")
+//        case 4, 5:       // 上の節から下に実行が及ぶことはない
+//            print("some")
+//        case 6: break    // breakを記述してもOK
+//        default:         // defaultは最後に記述
+//            print("several")
+//        }
+//        
+//        let 追試下限 = 45
+//        var score = 65 // たとえば得点が65点なら
+//        switch score {
+//        case 追試下限..<75: print("追試") //
+//        case 90...100: print("秀")
+//        case 80..<90: print("優")
+//        case 70..<80: print("良")
+//        case 60..<70: print("可")
+//        default:
+//            print("不可")
+//        }
         
         // Do any additional setup after loading the view.
     }
