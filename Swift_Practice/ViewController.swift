@@ -11,17 +11,17 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        // 仮引数の省略 引数名の代わりに_を用いた方法
-        func compare(_ a:Int, _ b:Int, _:Bool) {
-            
-        }
-        // 第３引数に引数 ラベルを付ける
-        func compare(_ a:Int, _ b:Int, option _:Bool) {
-            
-        }
-        // 呼び出し
-        compare(10, 8, option:true)
-        
+//        // 仮引数の省略 引数名の代わりに_を用いた方法
+//        func compare(_ a:Int, _ b:Int, _:Bool) {
+//            
+//        }
+//        // 第３引数に引数 ラベルを付ける
+//        func compare(_ a:Int, _ b:Int, option _:Bool) {
+//            
+//        }
+//        // 呼び出し
+//        compare(10, 8, option:true)
+//        
 //        // 引数ラベルの指定と省略
 //        func area(h:Double, w:Double) -> Double {
 //            return h * w
