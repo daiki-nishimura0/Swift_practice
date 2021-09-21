@@ -154,16 +154,18 @@ class ViewController: UIViewController {
         
         // repeat-while文
         // コラッツの問題 正整数nが偶数の時、n/2を、奇数の時3n+1を行う
-        var n = 7
-        repeat {
-            print("\(n) ", terminator: "") // 改行しない
-            if n % 2 == 0 {
-                n /= 2
-            } else {
-                n = n * 3 + 1
-            }
-        } while n > 1
-        print(n)
+//        var n = 7
+//        repeat {
+//            print("\(n) ", terminator: "") // 改行しない
+//            if n % 2 == 0 {
+//                n /= 2
+//            } else {
+//                n = n * 3 + 1
+//            }
+//        } while n > 1
+//        print(n)
+        
+        
         
         super.viewDidLoad()
         
