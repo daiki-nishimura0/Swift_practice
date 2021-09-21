@@ -139,9 +139,10 @@ class ViewController: UIViewController {
 //        } else {
 //            b = -a
 //        }
-        // 制御構文
-        // 代入を一行で複数行おこなう
-        target = obj; selector = name; count -= 1
+//        // 制御構文
+//        // 代入を一行で複数行おこなう
+//        target = obj; selector = name; count -= 1
+        
         
         
         super.viewDidLoad()
