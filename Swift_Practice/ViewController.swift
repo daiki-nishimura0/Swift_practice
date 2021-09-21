@@ -11,6 +11,13 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        // 引数ラベル
+        func buy(product:Int, price:Int, quantity:Int) {
+            print("Product:\(product), amount = \(price * quantity)")
+        }
+        // 呼び出し側での記述　実引数とともに記述される識別子を引数ラベルと呼ぶ
+        buy(product: 19090, price: 180000, quantity: 1)
+        
         
 //        // returnの省略
 //        // 以下の関数は同じ定義
@@ -19,7 +26,7 @@ class ViewController: UIViewController {
 //            return "現在の値は\(total)です"
 //        }
 //        func messageB() -> String { "現在の値は\(total)です" }
-//        
+//
 //        // 関数定義の概要
 //        var total = 0
 //
