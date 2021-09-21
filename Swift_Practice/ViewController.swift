@@ -143,6 +143,14 @@ class ViewController: UIViewController {
 //        // 代入を一行で複数行おこなう
 //        target = obj; selector = name; count -= 1
         
+        // while文
+        let val = 10032
+        var i = 1, mask = 2
+        while mask <= val {
+            mask <<= 1 //maskを１ビットずらす
+            i += 1
+            print(mask)
+        } // ループを出た時のiが、求めるビット数
         
         
         super.viewDidLoad()
