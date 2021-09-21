@@ -242,15 +242,15 @@ class ViewController: UIViewController {
 //            print("\(year)年は４で割り切れないので閏年ではない")
 //        }
         
-        // do分
-        let blood = "b"
-        search: do {
-            for t in ["A", "B", "O", "AB"] {
-                if blood == t { break search }
-            }
-            print("見つかりませんでした")
-        }
-        
+//        // do分
+//        let blood = "b"
+//        search: do {
+//            for t in ["A", "B", "O", "AB"] {
+//                if blood == t { break search }
+//            }
+//            print("見つかりませんでした")
+//        }
+//
         // Do any additional setup after loading the view.
     }
 
