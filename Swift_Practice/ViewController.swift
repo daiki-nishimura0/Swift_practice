@@ -215,7 +215,7 @@ class ViewController: UIViewController {
 //                print(pad + " \(d)", terminator: "")
 //                w += 1
 //                d += 1
-//                
+//
 //                if d > days {
 //                    print()
 //                    break loop
@@ -224,6 +224,24 @@ class ViewController: UIViewController {
 //            print()
 //            w = 0
 //        }
+        
+//        // ラベル付きのif文、switch文
+//        // 閏年の判定
+//        let year = 2024
+//        leap: if year % 4 == 0 {
+//            if year % 100 == 0 {
+//                if year % 400 == 0 {
+//                    print("\(year)年は400で割り切れるので閏年")
+//                    break leap
+//            }
+//                print("\(year)年は100で割り切れるので閏年ではない")
+//                break leap
+//        }
+//        print("\(year)年は４で割り切れるので閏年")
+//        } else {
+//            print("\(year)年は４で割り切れないので閏年ではない")
+//        }
+        
         
         
         // Do any additional setup after loading the view.
