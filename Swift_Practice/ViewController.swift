@@ -12,18 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // 引数の値は関数内で変更できない
-        // 関数内で仮引数が受け取った値を変更　（入力した日付に曜日を整数値で返す関数　日曜　0, 月曜 1）
-        func dayOfWeek(_ y:Int, _ m:Int, _ d:Int) -> Int{
-            var y = y, m = m
-            if m < 3 {
-                m += 12; y -= 1
-            }
-            let leep = y + y / 4 - y / 100 + y / 400
-            return(leep + (13 * m + 8) / 5 + d) % 7
-        }
-        print(dayOfWeek(2021, 10, 10))
-        
+//        // 引数の値は関数内で変更できない
+//        // 関数内で仮引数が受け取った値を変更　（入力した日付に曜日を整数値で返す関数　日曜　0, 月曜 1）
+//        func dayOfWeek(_ y:Int, _ m:Int, _ d:Int) -> Int{
+//            var y = y, m = m
+//            if m < 3 {
+//                m += 12; y -= 1
+//            }
+//            let leep = y + y / 4 - y / 100 + y / 400
+//            return(leep + (13 * m + 8) / 5 + d) % 7
+//        }
+//        print(dayOfWeek(2021, 10, 10))
+//        
 //        // 関数の引数に規定値を指定する
 //        let fontSize: Float = 12.0
 //
