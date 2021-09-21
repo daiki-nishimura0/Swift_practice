@@ -11,13 +11,25 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        // 下線の特殊な用法 ワイルドカード
-        _ = myGreatProcess(10, 20)
         
-        // for-in文
-        for _ in 1...10 {
-            // 繰り返しの処理（１０回繰り返し）
+        // inout引数　変数の値を入れ替えたい場合
+        func mySwap(_ a: inout Int, _ b: inout Int){
+            let t = a; a = b; b = t
         }
+        
+        var x = 100
+        var y = 0
+        mySwap(&x, &y) // 実行後　xとyの値が入れ替わる
+        print(x)
+        print(y)
+        
+//        // 下線の特殊な用法 ワイルドカード
+//        _ = myGreatProcess(10, 20)
+//
+//        // for-in文
+//        for _ in 1...10 {
+//            // 繰り返しの処理（１０回繰り返し）
+//        }
         
 //        // 仮引数の省略 引数名の代わりに_を用いた方法
 //        func compare(_ a:Int, _ b:Int, _:Bool) {
