@@ -6,14 +6,14 @@
 //
 
 import UIKit //フレームワークのインポート
-import Foundation
+//import Foundation
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        let fortune = ["大吉\u{2661}", "中吉\u{266a}", "小吉", "末吉", "凶\u{1f61e}", "大凶\u{1f480}"]
-        let idx = Int(time(nil)) % fortune.count
-        print(fortune[idx])
+//        let fortune = ["大吉\u{2661}", "中吉\u{266a}", "小吉", "末吉", "凶\u{1f61e}", "大凶\u{1f480}"]
+//        let idx = Int(time(nil)) % fortune.count
+//        print(fortune[idx])
         
 //        //変数の定義
 //        // 型宣言と初期値を記述
