@@ -11,18 +11,18 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        // 関数の引数に規定値を指定する
-        let fontSize: Float = 12.0
-        
-        func setFont(name:String, size:Float = fontSize, bold:Bool = false) {
-            print("\(name) \(size)" + (bold ? " [B]" : ""))
-        }
-        
-        func setGray(level:Int = 255, _ alpha:Float = 1.0) {
-            print("Gray=\(level), Alpha=\(alpha)")
-        }
-        print(setFont(name: "RaglanPunch"))
-        print(setFont(name: "RaglanPunch", bold: true))
+//        // 関数の引数に規定値を指定する
+//        let fontSize: Float = 12.0
+//        
+//        func setFont(name:String, size:Float = fontSize, bold:Bool = false) {
+//            print("\(name) \(size)" + (bold ? " [B]" : ""))
+//        }
+//        
+//        func setGray(level:Int = 255, _ alpha:Float = 1.0) {
+//            print("Gray=\(level), Alpha=\(alpha)")
+//        }
+//        print(setFont(name: "RaglanPunch"))
+//        print(setFont(name: "RaglanPunch", bold: true))
         
 //
 //        // inout引数　変数の値を入れ替えたい場合
