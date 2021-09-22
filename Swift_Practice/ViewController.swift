@@ -11,29 +11,29 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        // タプルと代入操作 一回で代入する
-        let photo = ("tager.jpg", 640,800)
-        let (file, width, height) = photo
-        print("\(file): \(width)x\(height)")
-        // 代入時に使用しない引数がある場合
-//        let (file, _, _) = photo //ファイル名だけ使う
-        
-        let pic = ("snake.png", (768, 1024)) // タプルを含むタプル
-//        let (file, (w, h)) = pic
-        let (name, _) = pic
-        
-        var x = 100, y = 0
-        (x, y) = (y, x)
-        print("x=\(x), y=\(y)")
-        
-        // タプルでフィボナッチ数列
-        var fibo1 = 0, fibo2 = 1
-        print(fibo1, terminator: " ")
-        for _ in 0 ..< 50 {
-            (fibo1,fibo2) = (fibo2, fibo1 + fibo2)
-            print(fibo1, terminator: " ")
-        }
-        print()
+//        // タプルと代入操作 一回で代入する
+//        let photo = ("tager.jpg", 640,800)
+//        let (file, width, height) = photo
+//        print("\(file): \(width)x\(height)")
+//        // 代入時に使用しない引数がある場合
+////        let (file, _, _) = photo //ファイル名だけ使う
+//
+//        let pic = ("snake.png", (768, 1024)) // タプルを含むタプル
+////        let (file, (w, h)) = pic
+//        let (name, _) = pic
+//
+//        var x = 100, y = 0
+//        (x, y) = (y, x)
+//        print("x=\(x), y=\(y)")
+//
+//        // タプルでフィボナッチ数列
+//        var fibo1 = 0, fibo2 = 1
+//        print(fibo1, terminator: " ")
+//        for _ in 0 ..< 50 {
+//            (fibo1,fibo2) = (fibo2, fibo1 + fibo2)
+//            print(fibo1, terminator: " ")
+//        }
+//        print()
         
 //
 //        // タプル
