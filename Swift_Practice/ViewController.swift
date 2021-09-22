@@ -11,6 +11,16 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        // 引数ラベルを使ったオーバーロードの定義
+        func mySwap(litle a: inout Int, great b: inout Int) {
+            if a > b {
+            let t = a; a = b; b = t
+            }
+        }
+        var s = 10, t = 20
+        mySwap(litle:&s, great:&t)
+        print("s=\(s), t=\(t)")
+        
 //        // オーバーロード 同じ関数名で引数の型や個数が異なる関数の定義
 //        func mySwap(_ a: inout Int, _ b: inout Int, _ c: inout Int) {
 //            let t = a; a = b; b = c; c = t
