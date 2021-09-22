@@ -12,14 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // タプルの比較
-        let s: (month:Int, day:Int, name:String) = (4, 24, "卯月")
-        let t: (day:Int, month:Int, String) = s
-        print( s == t)
-        let k = (month:5, name:"皐月") // let k = (name:"皐月", month:5) だとエラーになる
-        var u = (month:4, name:"卯月") // タプルの引数の型の並びを一緒にする
-        u = k
-        print( k == u)
+//        // タプルの比較
+//        let s: (month:Int, day:Int, name:String) = (4, 24, "卯月")
+//        let t: (day:Int, month:Int, String) = s
+//        print( s == t)
+//        let k = (month:5, name:"皐月") // let k = (name:"皐月", month:5) だとエラーになる
+//        var u = (month:4, name:"卯月") // タプルの引数の型の並びを一緒にする
+//        u = k
+//        print( k == u)
         
 //        // キーワード付きのタプルを返す関数
 //        // 返り値にキーワード
