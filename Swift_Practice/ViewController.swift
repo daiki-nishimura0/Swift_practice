@@ -12,15 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
+        // タプルの比較
+        let s: (month:Int, day:Int, name:String) = (4, 24, "卯月")
+        let t: (day:Int, month:Int, String) = s
+        print( s == t)
+        let k = (month:5, name:"皐月") // let k = (name:"皐月", month:5) だとエラーになる
+        var u = (month:4, name:"卯月") // タプルの引数の型の並びを一緒にする
+        u = k
+        print( k == u)
+        
 //        // キーワード付きのタプルを返す関数
-//        //
-////        func BMI(tall: Double, weight: Double) -> (Double, Double)
 //        // 返り値にキーワード
 //        func BMI(tall: Double, weight: Double) -> (index:Double, ideal:Double)
-//        
 //        let w = BMI(tall: 168.0, weight: 73.5)
 //        print("BMI=\(w.index), target=\(w.ideal)")
-//        
+//
 //        // キーワード付きタプル　複数や一部だけキーワード設定できるが、キーワードは重複してはいけない
 //        let photo = (file: "tiger.jpg", width: 640, height: 800)
 //        // 以下同じ出力
