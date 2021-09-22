@@ -12,11 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // キーワード付きタプル　複数や一部だけキーワード設定できるが、キーワードは重複してはいけない
-        let photo = (file: "tiger.jpg", width: 640, height: 800)
-        // 以下同じ出力
-        print(photo.0)
-        print(photo.file)
+//        // キーワード付きタプル　複数や一部だけキーワード設定できるが、キーワードは重複してはいけない
+//        let photo = (file: "tiger.jpg", width: 640, height: 800)
+//        // 以下同じ出力
+//        print(photo.0)
+//        print(photo.file)
         
         
         
