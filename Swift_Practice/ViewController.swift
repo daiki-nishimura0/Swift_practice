@@ -11,6 +11,15 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        // キーワード付きタプル　複数や一部だけキーワード設定できるが、キーワードは重複してはいけない
+        let photo = (file: "tiger.jpg", width: 640, height: 800)
+        // 以下同じ出力
+        print(photo.0)
+        print(photo.file)
+        
+        
+        
 //        // タプルを返す関数 BIMを測定し、理想の体重を返す
 //        func BMI(tall:Double, weight:Double) -> (Double, Double) {
 //            let ideal = 22.0
@@ -20,7 +29,7 @@ class ViewController: UIViewController {
 //        }
 //        let result = BMI(tall: 177.0, weight: 80.0)
 //        print(result)
-//        
+//
 //        // タプルと代入操作 一回で代入する
 //        let photo = ("tager.jpg", 640,800)
 //        let (file, width, height) = photo
