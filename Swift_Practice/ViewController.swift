@@ -11,6 +11,18 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        // タプル
+//        let m = ("monkey.jpg", 161_022)
+        let m : (String, Int) = ("monkey.jpg", 161_022)
+        let cat = ("cat.jpg", 1024, 768)
+        var img : (String, Int, Int) = cat
+//        img = m // 代入不可　引数の個数が違うため
+        print("\(img.0): \(img.1)x\(img.2)")
+        img.2 = 800
+        print("\(img.1)x\(img.2)")
+        
+        
 //        // 引数ラベルを使ったオーバーロードの定義
 //        func mySwap(litle a: inout Int, great b: inout Int) {
 //            if a > b {
@@ -20,7 +32,7 @@ class ViewController: UIViewController {
 //        var s = 10, t = 20
 //        mySwap(litle:&s, great:&t)
 //        print("s=\(s), t=\(t)")
-//        
+//
 //        // オーバーロード 同じ関数名で引数の型や個数が異なる関数の定義
 //        func mySwap(_ a: inout Int, _ b: inout Int, _ c: inout Int) {
 //            let t = a; a = b; b = c; c = t
