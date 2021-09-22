@@ -12,15 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // キーワード付きのタプルを返す関数
-        //
-//        func BMI(tall: Double, weight: Double) -> (Double, Double)
-        // 返り値にキーワード
-        func BMI(tall: Double, weight: Double) -> (index:Double, ideal:Double)
-        
-        let w = BMI(tall: 168.0, weight: 73.5)
-        print("BMI=\(w.index), target=\(w.ideal)")
-        
+//        // キーワード付きのタプルを返す関数
+//        //
+////        func BMI(tall: Double, weight: Double) -> (Double, Double)
+//        // 返り値にキーワード
+//        func BMI(tall: Double, weight: Double) -> (index:Double, ideal:Double)
+//        
+//        let w = BMI(tall: 168.0, weight: 73.5)
+//        print("BMI=\(w.index), target=\(w.ideal)")
+//        
 //        // キーワード付きタプル　複数や一部だけキーワード設定できるが、キーワードは重複してはいけない
 //        let photo = (file: "tiger.jpg", width: 640, height: 800)
 //        // 以下同じ出力
