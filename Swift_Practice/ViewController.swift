@@ -12,28 +12,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // タイプメソッド
-        struct SimpleDate {
-            var year, mouth, day: Int
-            static func isLeap(_ y: Int) -> Bool {
-                return (y % 4 == 0) && (y % 100 != 0 || y % 400 == 0)
-            }
-            static func daysOfMounth(_ m:Int, year:Int) -> Int {
-                switch m {
-                case 2: return isLeap(year) ? 29 : 28
-                case 4, 6, 9, 11: return 30
-                default: return 31
-                }
-            }
-            func leapYear() -> Bool {
-                SimpleDate.isLeap(year)
-            }
-        }
-        SimpleDate.isLeap(2000)
-        SimpleDate.daysOfMounth(2, year: 2000)
-        let d = SimpleDate(year: 2024, mouth: 11, day: 7)
-        print("うるう年？", d.leapYear())
-        
+//        // タイプメソッド
+//        struct SimpleDate {
+//            var year, mouth, day: Int
+//            static func isLeap(_ y: Int) -> Bool {
+//                return (y % 4 == 0) && (y % 100 != 0 || y % 400 == 0)
+//            }
+//            static func daysOfMounth(_ m:Int, year:Int) -> Int {
+//                switch m {
+//                case 2: return isLeap(year) ? 29 : 28
+//                case 4, 6, 9, 11: return 30
+//                default: return 31
+//                }
+//            }
+//            func leapYear() -> Bool {
+//                SimpleDate.isLeap(year)
+//            }
+//        }
+//        SimpleDate.isLeap(2000)
+//        SimpleDate.daysOfMounth(2, year: 2000)
+//        let d = SimpleDate(year: 2024, mouth: 11, day: 7)
+//        print("うるう年？", d.leapYear())
+//
 //        // 構造体の内容を変更するメソッド
 //        struct Clock {                          // 時間と分のみをもつClock型
 //            var hour = 0, min = 0               // 全項目イニシャライザを使う
