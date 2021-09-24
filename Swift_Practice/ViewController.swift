@@ -12,6 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
+//        infix operator >? :AdditionPrecedence
+//        
+//        func >? (lhs: inout Double, rhs: inout Double) {
+//            if lhs < rhs { lhs = rhs }
+//        }
+//        var  a = 1.22
+//        for x in [ 0.9, 1.25, -1.0, 2.0, 0.86 ] {
+//            a >? x
+//        }
+//        print(a)
+//        
 //        // タプルの比較
 //        let s: (month:Int, day:Int, name:String) = (4, 24, "卯月")
 //        let t: (day:Int, month:Int, String) = s
