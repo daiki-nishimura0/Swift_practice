@@ -12,6 +12,34 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
+        // 構造体の内容を変更するメソッド
+        struct Clock {                          // 時間と分のみをもつClock型
+            var hour = 0, min = 0               // 全項目イニシャライザを使う
+            mutating func advanced(min:Int) {   // プロパティの値を変更する
+                let m = self.min + min
+                if m >= 60 {
+                    self.min = m % 60
+                    let t = self.hour + m / 60
+                    self.hour = t % 24
+                } else {
+                    self.min = m
+                }
+            }
+            mutating func inc() {               // このメソッドをmutating
+                self.advanced(min: 1)           // １分進める
+            }
+            func toString() -> String {
+                let h = hour < 10 ? "\(hour)":"\(hour)"
+                let m = min < 10 ? "0\(min)":"\(min)"
+                return h + ":" + m
+            }
+        }
+        var tic = Clock(hour: 19, min: 40)
+        tic.advanced(min: 19)
+        tic.inc()
+        print(tic.toString())
+        
+        
 //        // メソッド
 //        struct Time {               // 時間と分のみをもつTime型
 //            let hour, min : Int     // 定数で時刻を保持。全項目イニシャライザを使う
