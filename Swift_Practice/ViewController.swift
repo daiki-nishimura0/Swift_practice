@@ -12,28 +12,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // メソッド
-        struct Time {               // 時間と分のみをもつTime型
-            let hour, min : Int     // 定数で時刻を保持。全項目イニシャライザを使う
-            func advanced(min:Int) -> Time { // 分を加算する
-                var m = self.min + min
-                var h = self.hour
-                if m >= 60 {
-                    h = (h + m / 60) % 24
-                    m %= 60
-                }
-                return Time(hour: h, min: m) // 新しいインスタンスを返す
-            }
-            func toString() -> String {      // 時刻を文字列として返す
-                let h = hour < 10 ? "\(hour)":"\(hour)"
-                let m = min < 10 ? "0\(min)":"\(min)"
-                return h + ":" + m
-            }
-        }
-        let t1 = Time(hour: 22, min: 45)
-        let t2 = t1.advanced(min: 40)
-        print(t1.toString())
-        print(t2.toString())
+//        // メソッド
+//        struct Time {               // 時間と分のみをもつTime型
+//            let hour, min : Int     // 定数で時刻を保持。全項目イニシャライザを使う
+//            func advanced(min:Int) -> Time { // 分を加算する
+//                var m = self.min + min
+//                var h = self.hour
+//                if m >= 60 {
+//                    h = (h + m / 60) % 24
+//                    m %= 60
+//                }
+//                return Time(hour: h, min: m) // 新しいインスタンスを返す
+//            }
+//            func toString() -> String {      // 時刻を文字列として返す
+//                let h = hour < 10 ? "\(hour)":"\(hour)"
+//                let m = min < 10 ? "0\(min)":"\(min)"
+//                return h + ":" + m
+//            }
+//        }
+//        let t1 = Time(hour: 22, min: 45)
+//        let t2 = t1.advanced(min: 40)
+//        print(t1.toString())
+//        print(t2.toString())
         
 //        infix operator >? :AdditionPrecedence
 //
