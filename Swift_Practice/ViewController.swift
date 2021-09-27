@@ -11,35 +11,63 @@ import UIKit //フレームワークのインポート
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-  
-        // プロパティ
-        struct DateWithString {
-            let string: String
-            let year, month, day: Int
-            static let mons = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-            static var longFormat = false
-            init(_ y:Int, _ m:Int, _ d:Int) {
-                year = y; month = m; day = d
-                string = DateWithString.longFormat
-                    ? DateWithString.longString(y,m,d)
-                    : DateWithString.shortString(y,m,d)
+        
+        // プロトコル
+        struct Time : CustomStringConvertible {          // プロトコルを指定
+            let hour, min : Int     // 定数で時刻を保持。全項目イニシャライザを使う
+            func advanced(min:Int) -> Time { // 分を加算する
+                var m = self.min + min
+                var h = self.hour
+                if m >= 60 {
+                    h = (h + m / 60) % 24
+                    m %= 60
+                }
+                return Time(hour: h, min: m) // 新しいインスタンスを返す
             }
-            static func twoDigits(_ n:Int) -> String {
-                let i = n % 100
-                return i < 10 ? "0\(i)" : "\(i)"
+            func toString() -> String {      // 時刻を文字列として返す
+                let h = hour < 10 ? "\(hour)":"\(hour)"
+                let m = min < 10 ? "0\(min)":"\(min)"
+                return h + ":" + m
             }
-            static func longString(_ y:Int, _ m: Int, _ d:Int) -> String {
-                return "\(y)-" + twoDigits(m) + "-" + twoDigits(d)
-            }
-            static func shortString(_ y:Int, _ m: Int, _ d:Int) -> String {
-                return twoDigits(d) + mons[m-1] + twoDigits(y)
+            var description: String {
+                let h = hour < 10 ? "\(hour)":"\(hour)"
+                let m = min < 10 ? "0\(min)":"\(min)"
+                return h + ":" + m
             }
         }
-        let a = DateWithString(2025, 1, 20)
-        print(a.string)
-        DateWithString.longFormat = true
-        let b = DateWithString(2025, 1, 25)
-        print(b.string)
+        let tm = Time(hour: 19, min: 40)
+        print(tm)
+        let t2 = tm.advanced(min: 20)
+        print("時刻は\(t2)です")
+  
+//        // プロパティ
+//        struct DateWithString {
+//            let string: String
+//            let year, month, day: Int
+//            static let mons = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+//            static var longFormat = false
+//            init(_ y:Int, _ m:Int, _ d:Int) {
+//                year = y; month = m; day = d
+//                string = DateWithString.longFormat
+//                    ? DateWithString.longString(y,m,d)
+//                    : DateWithString.shortString(y,m,d)
+//            }
+//            static func twoDigits(_ n:Int) -> String {
+//                let i = n % 100
+//                return i < 10 ? "0\(i)" : "\(i)"
+//            }
+//            static func longString(_ y:Int, _ m: Int, _ d:Int) -> String {
+//                return "\(y)-" + twoDigits(m) + "-" + twoDigits(d)
+//            }
+//            static func shortString(_ y:Int, _ m: Int, _ d:Int) -> String {
+//                return twoDigits(d) + mons[m-1] + twoDigits(y)
+//            }
+//        }
+//        let a = DateWithString(2025, 1, 20)
+//        print(a.string)
+//        DateWithString.longFormat = true
+//        let b = DateWithString(2025, 1, 25)
+//        print(b.string)
         
 //        // 構造体の内部での演算子の定義
 //        struct Clock {
